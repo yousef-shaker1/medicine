@@ -22,6 +22,8 @@ Route::get('/', function () {
 
 Route::get('Pharmacy_owner', [PharmacyOwnerController::class, 'index'])->name('Pharmacy_owner');
 Route::get('add_medicine', [MedicineController::class, 'index'])->name('add_medicine');
+Route::get('show_medicine', [MedicineController::class, 'show'])->name('show_medicine');
+Route::delete('delete_medicine/{id}', [MedicineController::class, 'delete'])->name('delete_medicine');
 
 Route::get('/dashboard', function () {
     return view('welcome');

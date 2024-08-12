@@ -66,6 +66,8 @@
             <button type="submit" class="btn btn-link text-white">تسجيل خروج</button>
         </form>        
             <a class="navbar-brand text-white" href="{{ route('add_medicine') }}">رفع دواء</a>
+            <a class="navbar-brand text-white" href="{{ route('show_medicine') }}">مشاهدة الادوية الخاصة بي</a>
+            <a class="navbar-brand text-white" href="{{ route('home') }}">الرئيسية</a>
         @endif
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
